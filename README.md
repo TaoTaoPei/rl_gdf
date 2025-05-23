@@ -1,7 +1,5 @@
 # rl_sar
 
-[English document](README.md)
-
 **版本选择: [ROS-Noetic](https://github.com/fan-ziqi/rl_sar/tree/main) | [ROS2-Foxy/Humble](https://github.com/fan-ziqi/rl_sar/tree/ros2)**
 
 本仓库提供了机器人强化学习算法的仿真验证与实物部署框架，适配四足机器人、轮足机器人、人形机器人。"sar"代表"simulation and real"
@@ -34,7 +32,8 @@ sudo apt install ros-$ROS_DISTRO-teleop-twist-keyboard ros-$ROS_DISTRO-ros2-cont
 
 下载并部署`libtorch`到`src/rl_sar/thirdpart`
 ```bash
-cd src/rl_sar/thirdpart
+cd src/rl_sar/
+mkdir thirdpart && cd thirdpart
 wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.0.1%2Bcpu.zip
 unzip libtorch-cxx11-abi-shared-with-deps-2.0.1+cpu.zip -d ./
 ```
