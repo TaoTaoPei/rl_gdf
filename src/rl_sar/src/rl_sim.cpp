@@ -11,7 +11,7 @@ RL_Sim::RL_Sim()
 
     // get params from param_node 传建客户端监听 param_node
     // *********************** 从 param_node 接受 两个参数****************************
-    /*
+    /**/
     param_client = this->create_client<rcl_interfaces::srv::GetParameters>("/param_node/get_parameters");
     while (!param_client->wait_for_service(std::chrono::seconds(1)))
     {
@@ -51,12 +51,12 @@ RL_Sim::RL_Sim()
     {
         std::cout << LOGGER::ERROR << "Failed to call param_node service" << std::endl;
     }
-    */
+    /*
     if(true){
         this->robot_name = "a1_isaacsim";
         this->gazebo_model_name = "a1_gazebo";
     }
-    /**/
+    */
 
     // read params from yaml
     this->ReadYaml(this->robot_name);

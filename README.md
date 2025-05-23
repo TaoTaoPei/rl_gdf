@@ -27,6 +27,7 @@ git clone https://github.com/TaoTaoPei/rl_gdf.git
 本项目使用`ros2-foxy`(Ubuntu20.04)或`ros2-humble`(Ubuntu22.04)，且需要安装以下的ros依赖包
 
 ```bash
+sudo apt install ros-$ROS_DISTRO-gazebo-ros-*
 sudo apt install ros-$ROS_DISTRO-teleop-twist-keyboard ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers ros-$ROS_DISTRO-control-toolbox ros-$ROS_DISTRO-robot-state-publisher ros-$ROS_DISTRO-joint-state-publisher-gui ros-$ROS_DISTRO-gazebo-ros2-control ros-$ROS_DISTRO-gazebo-ros-pkgs ros-$ROS_DISTRO-xacro
 ```
 
