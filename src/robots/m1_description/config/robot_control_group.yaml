@@ -16,34 +16,35 @@ robot_joint_controller:
     ros__parameters:
         joints:
             # isaacgym
-            - AAHead_yaw
-            - Head_pitch
+            # - arm_l1_joint
+            # - arm_l2_joint
+            # - arm_l3_joint
+            # - arm_l4_joint
+            # - arm_l5_joint
+            # - arm_l6_joint
+            # - arm_l7_joint
 
-            - Left_Shoulder_Pitch
-            - Left_Shoulder_Roll
-            - Left_Elbow_Pitch
-            - Left_Elbow_Yaw
-            
-            - Right_Shoulder_Pitch
-            - Right_Shoulder_Roll
-            - Right_Elbow_Pitch
-            - Right_Elbow_Yaw
-            
-            - Waist
-            
-            - Left_Hip_Pitch
-            - Left_Hip_Roll
-            - Left_Hip_Yaw
-            - Left_Knee_Pitch
-            - Left_Ankle_Pitch
-            - Left_Ankle_Roll
+            # - arm_r1_joint
+            # - arm_r2_joint
+            # - arm_r3_joint
+            # - arm_r4_joint
+            # - arm_r5_joint
+            # - arm_r6_joint
+            # - arm_r7_joint
 
-            - Right_Hip_Pitch            
-            - Right_Hip_Roll
-            - Right_Hip_Yaw
-            - Right_Knee_Pitch
-            - Right_Ankle_Pitch
-            - Right_Ankle_Roll
+            - leg_l1_joint
+            - leg_l2_joint
+            - leg_l3_joint            
+            - leg_l4_joint
+            - leg_l5_joint
+            - leg_l6_joint
+
+            - leg_r1_joint
+            - leg_r2_joint
+            - leg_r3_joint            
+            - leg_r4_joint
+            - leg_r5_joint
+            - leg_r6_joint
 
 imu_sensor_broadcaster:
     ros__parameters:
