@@ -1,0 +1,51 @@
+controller_manager:
+    ros__parameters:
+        update_rate: 1000  # Hz
+        use_sim_time: true  # If running in simulation
+
+        joint_state_broadcaster:
+            type: joint_state_broadcaster/JointStateBroadcaster
+
+        imu_sensor_broadcaster:
+            type: imu_sensor_broadcaster/ImuSensorBroadcaster
+
+        robot_joint_controller: # 控制器名称
+            type: robot_joint_controller/RobotJointControllerGroup
+
+robot_joint_controller:
+    ros__parameters:
+        joints:
+            # isaacgym
+            - AAHead_yaw
+            - Head_pitch
+
+            - Left_Shoulder_Pitch
+            - Left_Shoulder_Roll
+            - Left_Elbow_Pitch
+            - Left_Elbow_Yaw
+            
+            - Right_Shoulder_Pitch
+            - Right_Shoulder_Roll
+            - Right_Elbow_Pitch
+            - Right_Elbow_Yaw
+            
+            - Waist
+            
+            - Left_Hip_Pitch
+            - Left_Hip_Roll
+            - Left_Hip_Yaw
+            - Left_Knee_Pitch
+            - Left_Ankle_Pitch
+            - Left_Ankle_Roll
+
+            - Right_Hip_Pitch            
+            - Right_Hip_Roll
+            - Right_Hip_Yaw
+            - Right_Knee_Pitch
+            - Right_Ankle_Pitch
+            - Right_Ankle_Roll
+
+imu_sensor_broadcaster:
+    ros__parameters:
+        sensor_name: "imu_sensor"
+        frame_id: imu_link
